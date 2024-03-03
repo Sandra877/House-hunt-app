@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>Register Here</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'registerstyles.css' %}">
+
+</head>
+<body>
+
 <h1>Register Here</h1>
 
 <form action="." method="POST">
@@ -17,10 +27,7 @@
     <input type="submit" name="createuser" value="Register"/>
 </form>
 
-
-
-
-
 <p>Have an account? <a href="/register/login/">Sign in</a></p>
 
-
+</body>
+</html>
