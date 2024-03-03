@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'RegisterPage',
     'HomePage',
     'LoginPage',
+    'addandlook',
     'debug_toolbar',
     ]
 

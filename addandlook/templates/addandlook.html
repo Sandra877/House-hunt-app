@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View or Add Houses</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'addandlook.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to House Listings</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="{% url 'addhouse' %}">Add House</a></li>
+                <li><a href="#">View Houses</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="add-house">
+            <a href="{% url 'addhouse' %}">Add House</a>
+        </section>
+        <section class="houses">
+            <div class="house">
+                <img src="house1.jpg" alt="House 1">
+                <div class="description">
+                    <h2>House 1</h2>
+                    <p>Description of House 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+            <div class="house">
+                <img src="house2.jpg" alt="House 2">
+                <div class="description">
+                    <h2>House 2</h2>
+                    <p>Description of House 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+            <!-- Add more houses as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 House Listings. All rights reserved.</p>
+    </footer>
+</body>
+</html>

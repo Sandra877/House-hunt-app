@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light purple background */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: #5d3bae; /* Dark purple header background */
+    color: #fff; /* White header text color */
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.add-house {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-house a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5d3bae; /* Dark purple button background */
+    color: #fff; /* White button text color */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.houses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.house {
+    background-color: #fff; /* White house background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.house img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.description h2 {
+    margin-top: 0;
+}
+
+.description a {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #5d3bae; /* Dark purple link background */
+    color: #fff; /* White link text color */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.description a:hover {
+    background-color: #4527a0; /* Darker purple on hover */
+}
+
+footer {
+    background-color: #5d3bae; /* Dark purple footer background */
+    color: #fff; /* White footer text color */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

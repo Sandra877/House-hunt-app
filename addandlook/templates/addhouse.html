@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add House</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'addhouse.css' %}">
+</head>
+<body>
+    <h1>Add House</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="id_image1">Image 1:</label>
+        {{ form.image1 }}
+        <label for="id_image2">Image 2:</label>
+        {{ form.image2 }}
+        <label for="id_video">Video:</label>
+        {{ form.video }}
+        <label for="id_contact">Contact:</label>
+        {{ form.contact }}
+        <label for="id_live_location">Live Location:</label>
+        {{ form.live_location }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
