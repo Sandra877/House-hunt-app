@@ -25,23 +25,18 @@
             <a href="{% url 'addhouse' %}">Add House</a>
         </section>
         <section class="houses">
+            {% for house in houses %}
             <div class="house">
-                <img src="house1.jpg" alt="House 1">
+                <img src="{{ house.image1.url }}" alt="{{ house.house_type }}">
                 <div class="description">
-                    <h2>House 1</h2>
-                    <p>Description of House 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#">View Details</a>
+                    <h2>{{ house.house_type }}</h2>
+                    <p>Contact: {{ house.contact }}</p>
+                    <p>Location: {{ house.live_location }}</p>
+                    <!-- Add more fields as needed -->
+                    <a href="{% url 'house_details' house.id %}">View Details</a>
                 </div>
             </div>
-            <div class="house">
-                <img src="house2.jpg" alt="House 2">
-                <div class="description">
-                    <h2>House 2</h2>
-                    <p>Description of House 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-            <!-- Add more houses as needed -->
+            {% endfor %}
         </section>
     </main>
     <footer>

@@ -7,3 +7,4 @@ class House(models.Model):
     video = models.FileField(upload_to='videos/')
     contact = models.CharField(max_length=100)
     live_location = models.CharField(max_length=100)
+    house_type = models.CharField(max_length = 100)

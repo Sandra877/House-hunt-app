@@ -1,0 +1,9 @@
+<form method="GET" action="{% url 'house_search' %}">
+    {{ form.location }}
+    {{ form.house_type }}
+    <button type="submit">Search</button>
+</form>
+
+{% for house in houses %}
+    <!-- Display house information here -->
+{% endfor %}
